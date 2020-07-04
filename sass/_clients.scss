@@ -1,0 +1,35 @@
+.company-clients {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+
+    & .item + .item {
+        margin-left: 30px;
+    }
+}
+
+.link-company {
+    @extend %link;
+    display: block;
+    width: 170px;
+    height: 90px;
+    padding: 20px 63px;
+    color: $links;
+    border: 1px solid;
+    border-radius: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), --color2 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 1px solid;
+        border-color: $accent-color;
+        --color2: #2196F3;
+    }
+}
+
+.constant {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}

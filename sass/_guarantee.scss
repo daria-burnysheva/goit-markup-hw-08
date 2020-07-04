@@ -1,0 +1,56 @@
+.picture {
+    padding: 25px 100px;
+    background-color: $background-picture-color;
+}
+.guarantee {
+    @extend %list;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    & .item {
+        width: 270px;
+    }
+
+    & .item + .item {
+        margin-left: 30px; 
+    }
+
+    & .item .header-secondary {
+        margin-bottom: 0; 
+    }
+
+    & .item .picture {
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+    }
+
+    & .item .assurance {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+
+
+}
+.underline {
+    position: absolute;
+    right: 22%;
+    bottom: 6%;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+
+    color: $white;
+    text-align: center;
+}
+.assurance {
+    @extend %text;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
